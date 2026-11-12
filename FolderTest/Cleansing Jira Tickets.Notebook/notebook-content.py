@@ -35,6 +35,7 @@ df = spark.read.table("jira_tickets")
 # CELL ********************
 
 display(df)
+# print("Hi")
 
 # METADATA ********************
 
