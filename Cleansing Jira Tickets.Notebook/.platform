@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "Cleansing Jira Tickets"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "528f3aff-83d3-939c-4126-24326d6d7d39"
+  }
+}

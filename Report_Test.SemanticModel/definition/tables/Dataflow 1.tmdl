@@ -1,0 +1,86 @@
+table 'Dataflow 1'
+	lineageTag: 15a5f790-25e0-4b0c-8f85-ab92dfad4ccc
+
+	column entity
+		dataType: string
+		lineageTag: cfd94d08-f302-4933-8cae-0840e4361509
+		summarizeBy: none
+		sourceColumn: entity
+
+		annotation SummarizationSetBy = Automatic
+
+	column dataCategory
+		dataType: string
+		lineageTag: 7ea88a38-e545-451d-a274-68e9fdee2846
+		summarizeBy: none
+		sourceColumn: dataCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column Data
+		dataType: string
+		lineageTag: ffd0ef6c-268f-4249-ae6b-519daedfc4f7
+		summarizeBy: none
+		sourceColumn: Data
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tags
+		dataType: string
+		lineageTag: c651d918-9d74-42d1-9767-5e800fe90cac
+		summarizeBy: none
+		sourceColumn: Tags
+
+		annotation SummarizationSetBy = Automatic
+
+	column entityName
+		dataType: string
+		lineageTag: f86ddb07-5307-457e-be95-8c27238fc601
+		summarizeBy: none
+		sourceColumn: entityName
+
+		annotation SummarizationSetBy = Automatic
+
+	column version
+		dataType: string
+		lineageTag: 8b3a886c-211b-4dfa-8c46-210c32388a52
+		summarizeBy: none
+		sourceColumn: version
+
+		annotation SummarizationSetBy = Automatic
+
+	column ItemKind
+		dataType: string
+		lineageTag: 9262a928-9d2f-4c0a-b01d-d162ef40a035
+		summarizeBy: none
+		sourceColumn: ItemKind
+
+		annotation SummarizationSetBy = Automatic
+
+	column ItemName
+		dataType: string
+		lineageTag: 41555d8a-06de-4192-881b-0b4855aea87d
+		summarizeBy: none
+		sourceColumn: ItemName
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsLeaf
+		dataType: string
+		lineageTag: 22eaafb7-4778-49ce-b218-11f0aa95bb24
+		summarizeBy: none
+		sourceColumn: IsLeaf
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Dataflow 1' = m
+		mode: import
+		source =
+				let
+				  Source = PowerPlatform.Dataflows([]),
+				  #"Navigation 1" = Source{[Id = "Workspaces"]}[Data],
+				  #"Navigation 2" = #"Navigation 1"{[workspaceId = "883ac136-9d9d-429c-a3d4-50dd3e3df5f6"]}[Data],
+				  #"Navigation 3" = #"Navigation 2"{[dataflowId = "8b6c70e9-a3e9-48be-ade8-b5109cae5f50"]}[Data]
+				in
+				  #"Navigation 3"
+

@@ -1,0 +1,88 @@
+table Test_Data
+	lineageTag: 5a68bde5-64fe-4ba7-b4f3-8ddd8fcacfe7
+	sourceLineageTag: [dbo].[Test_Data]
+
+	column SNo
+		dataType: string
+		lineageTag: de21747c-ecfd-4db3-b80b-39215afce553
+		sourceLineageTag: SNo
+		summarizeBy: none
+		sourceColumn: SNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: int64
+		formatString: 0
+		lineageTag: 5befdfa2-1e54-447c-84f2-5900884aa130
+		sourceLineageTag: Column2
+		summarizeBy: sum
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Column6.1'
+		dataType: string
+		lineageTag: 47e7ffb4-eeb3-4964-b10a-7af74844f579
+		sourceLineageTag: Column6.1
+		summarizeBy: none
+		sourceColumn: Column6.1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Column6.2'
+		dataType: string
+		lineageTag: 3913b24b-6b4d-436a-a749-8f4e5fe674a5
+		sourceLineageTag: Column6.2
+		summarizeBy: none
+		sourceColumn: Column6.2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Column6.3'
+		dataType: string
+		lineageTag: eeb3b0ce-779d-477d-b330-2679e9348937
+		sourceLineageTag: Column6.3
+		summarizeBy: none
+		sourceColumn: Column6.3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column7
+		dataType: int64
+		formatString: 0
+		lineageTag: ad4b2614-cc73-4bca-8cc0-e9320f2f6ac9
+		sourceLineageTag: Column7
+		summarizeBy: sum
+		sourceColumn: Column7
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column8
+		dataType: double
+		lineageTag: 0fa25e32-4893-4374-9be3-f9c06f368627
+		sourceLineageTag: Column8
+		summarizeBy: sum
+		sourceColumn: Column8
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column9
+		dataType: double
+		lineageTag: 53f1bcd2-a4af-466e-a618-c634b3bc8f47
+		sourceLineageTag: Column9
+		summarizeBy: sum
+		sourceColumn: Column9
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Test_Data = entity
+		mode: directLake
+		source
+			entityName: Test_Data
+			expressionSource: 'DirectLake - Pinelabs_LH'
+

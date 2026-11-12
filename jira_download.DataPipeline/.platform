@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "jira_download"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "80c433c3-dd1f-b982-4369-34b8ed9a491f"
+  }
+}

@@ -1,0 +1,11 @@
+expression 'DirectLake - Pinelabs_LH' =
+		let
+		    Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/883ac136-9d9d-429c-a3d4-50dd3e3df5f6/a4d2f381-f601-448f-b586-56bde2a6db83", [HierarchicalNavigation=true])
+		in
+		    Source
+	lineageTag: 4b746e7d-f750-4cd7-82aa-6a12de86829c
+
+	annotation PBI_IncludeFutureArtifacts = False
+
+	annotation PBI_RemovedChildren = [{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[dev_jira_tickets]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[jira_tickets_60]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[jira_tickets]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[unfiltered_jira_description]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[filtered_jira_description]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[2021 _1_]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[jira_comments]"}},"objectType":"Table"}]
+

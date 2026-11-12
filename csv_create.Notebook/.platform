@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "csv_create"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5b70e3af-11f7-a8b2-4812-e81a6006135f"
+  }
+}

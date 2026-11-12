@@ -1,0 +1,40 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {},
+  "name": "Dataflow 1",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "2021 (1)": {
+      "queryId": "e583669d-a304-4842-8292-b31a762ff268",
+      "queryName": "2021 (1)",
+      "loadEnabled": false
+    },
+    "2021 (2)": {
+      "queryId": "78b1fa33-4e69-428f-a74c-4dd4f11878ad",
+      "queryName": "2021 (2)"
+    },
+    "2021 (3)": {
+      "queryId": "bf8c3a8e-fb93-44d4-90ee-6409246ca80f",
+      "queryName": "2021 (3)"
+    },
+    "2021 (1)_DataDestination": {
+      "queryId": "7e373417-ca1d-4848-84c8-aa2de5afbc27",
+      "queryName": "2021 (1)_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "https://xencia1-my.sharepoint.com/personal/vignesh_g_xencia_com/",
+      "kind": "Web",
+      "connectionId": "{\"ClusterId\":\"53b72d5b-5b21-4deb-a1f9-aaf4dfa25b34\",\"DatasourceId\":\"6381b6fb-630b-4a8f-9f72-a7beda382b7c\"}"
+    },
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"53b72d5b-5b21-4deb-a1f9-aaf4dfa25b34\",\"DatasourceId\":\"b9b79071-2bb6-4a8c-9933-2f56523c68ca\"}"
+    }
+  ]
+}
